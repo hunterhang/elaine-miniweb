@@ -1,0 +1,247 @@
+@font-face {
+      font-family: "ProximaNova-Bold";
+      src: url("/static/ProximaNova-Bold.otf") format(truetype);
+}
+@font-face {
+      font-family: "ProximaNova-Semibold";
+      src: url("/static/ProximaNova-Semibold.otf") format(truetype);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+ }
+.clearfix:after {content: '';display: table;clear: both;}
+*{
+    font-size:12px;
+    font-family:"Microsoft YaHei","ProximaNova-Bold",Arial,Helvetica,sans-serif,"宋体";
+}
+.button {
+    width:45.8%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    line-height:32px;
+    font-weight:700;
+    border-radius:7px;
+    border: 1px solid #B2B2B2;
+}
+
+.black {
+    color:white;
+    background:black;
+    border: 1px solid black !important;
+}
+.white {
+    color:black;
+    background:white;
+}
+.corner_div {
+    border-radius: 10px;
+    border: 1px solid #B2B2B2;
+    width: 100%;
+    margin-top:25px;
+    height:160px;
+}
+.corner_span span
+{
+    border-radius: 4px;
+    border: 1px solid #B2B2B2;
+    padding:2px 5px;
+    text-align:center;
+    margin-right:10px;
+    font-family:"ProximaNova-Semibold";
+    display:block;
+    float:left;
+    min-width:20px;
+}
+
+.order_list div
+{
+    float:left;
+}
+.order_status_span span
+{
+    width:30%;
+    line-height:30px;
+    margin-right:5%;
+}
+.corner_span_v2 span
+{
+    box-sizing:border-box;
+    border-radius: 4px;
+    border: 1px solid #B2B2B2;
+    text-align:center;
+    font-family:"ProximaNova-Semibold";
+    display:block;
+    float:left;
+    min-width:20px;
+    font-size:14px;
+    font-weight:700px;
+    font-family:"Microsoft YaHei","ProximaNova-Bold",Arial,Helvetica,sans-serif,"宋体";
+}
+.corner_pay
+{
+    border-radius: 4px;
+    border: 1px solid #000000;
+    padding:5px;
+    text-align:center;
+    font-weight:bold;
+    line-height:32px;
+}
+.upload_file
+{
+    width:50%;
+    height:100%;
+    float:left;
+    position:relative;
+}
+
+.upload_file p
+{
+    text-align:center;
+    color:#B2B2B2;
+    width:110px;
+}
+.input_file
+{
+    margin:13px;
+    height:90px;
+}
+.input_file input
+{
+    width:110px;
+    opacity:0;
+    position:absolute;
+    top:13px;
+    height:100px;
+    left:20%;
+}
+
+.input_file img
+{
+    display:block;
+    width:110px;
+    height:100px;
+    margin:0px auto;
+}
+
+.show_img
+{
+   width:40%;
+   float:left;
+   text-align:center;
+   margin-left:6%;
+   margin-top:5%;
+   margin-bottom:5%;
+   margin:25px 2% 7px 6%;
+}
+.show_img img
+{
+    width:100%;
+    height:75px;
+}
+.show_img1
+{
+   width:50%;
+   float:left;
+   text-align:center;
+}
+.show_img1 div
+{
+    margin-top:18px;
+}
+.gray_line
+{
+    border-bottom: 1px solid #CCCCCC;
+    margin:0 auto;
+}
+.corner_input
+{
+    margin-top:4%;
+    height:24px;
+    border-radius:4px;
+    border:1px solid #B2B2B2;
+    width:100%;
+}
+#desc img
+{
+    width:100%;
+}
+#dress_corner_span span
+{
+    box-sizing:border-box;
+    border-radius: 7px;
+    border: 1px solid gray;
+    width:32%;
+    display:block;
+    float:left;
+    line-height:32px;
+    margin-left:2%;
+}
+.chuanda_img
+{
+    margin-top:25px;
+}
+.chuanda_img div:nth-child(odd)
+{
+    width:46%;
+    float:left;
+}
+.chuanda_img div:nth-child(even)
+{
+    width:46%;
+    margin-left:8%;
+    float:left;
+}
+.chuanda_img img
+{
+    width:100%;
+    max-height:184px;
+    border-radius: 7px;
+}
+.chuanda_img span
+{
+    float:left;
+}
+.chuanda_img font
+{
+	line-height:12px;
+}
+.english_title_font{
+	font-family:'ProximaNova-Bold','Microsoft YaHei';
+	text-align:left;
+}
+.corner{
+      border-radius: 4px;
+      border: 1px solid #B2B2B2;
+      text-align:center;
+}
+.body_width{
+    width:87.4%;
+    margin: auto;
+}
+
+.page_header {
+  text-align: center;
+  border-bottom: 1px solid #cccccc;
+  line-height: 49px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.margin_top1{
+    margin-top:20px;
+}
+.margin_top2{
+    margin-top:40px;
+}
+.input_line_height
+{
+    line-height: 45px;
+}
+.display_flex
+{
+    display: flex;
+}
+

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>上传图片</title>
+	</head>
+	<style>
+		#form div{line-height:30px;}
+		#form div label {width:120px;}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$.ajax({ url: "/Admin/Index/GetImgHistory",success: function(rsp){
+					rsp = $.parseJSON(rsp);
+					console.log(rsp);
+					if(rsp.ret == 0)
+					{
+						$("#title").val(rsp.data.title);
+						$("#date").val(rsp.data.start_time);
+						if(rsp.data.is_online == 1)
+						{
+							$("input:radio[value=1]").attr('checked','true');
+						}else{
+							$("input:radio[value=0]").attr('checked','true');
+						}
+					}
+			}});	
+		});
+	</script>
+	<body>
+		<form id="form" action="/Admin/Index/upload_show_img" method="POST" enctype="multipart/form-data" name="upload_form">
+			<div>请输入用户名:<input type="text" name="username" ></div> 
+			<div>请输入密码:<input type="password" name="password" ></div>
+			<div>----------------内容---------------------</div>
+			<div>请输入标题：<input type="text" name="title" value="" id="title">例如：VOL00001</div>
+			<div>请输入日期：<input type="text" name="date" id="date">例如:2017-10-30 06:00:00</div> 
+			<div>是否立即上线：是:<input type="radio" name="is_online" value=1> 否：<input type="radio" name="is_online" value=0></div>
+			<div>请选择图片:<input name="imgfile" type="file" accept="image/gif, image/jpeg"/></div>
+			<div><input name="upload" type="submit" value="上传" /></div>
+		</form>
+	</body>
+</html>
